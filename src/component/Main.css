@@ -1,0 +1,4 @@
+.Main {
+    --border: none;
+    border: var(--border);
+}

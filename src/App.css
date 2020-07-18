@@ -1,0 +1,89 @@
+.App {
+    display: grid;
+    margin: 0;
+    min-height: 100vh;
+    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas:
+        "title  title  title "
+        "nav    main   ad    "
+        "nav    main   side  "
+        "footer footer footer";
+}
+
+:root {
+    --app-backgroundColor: #fff;
+    --title--color: #090909;
+    --title--backgroundColor: #ffaaaa;
+    --main--color: #090909;
+    --main--backgroundColor: #afa;
+    --nav--color: #090909;
+    --nav--backgroundColor: #aaf;
+    --sidebar--color: #090909;
+    --sidebar--backgroundColor: #faf;
+    --footer--color: #090909;
+    --footer--backgroundColor: #aaa;
+    --ad--color: #090909;
+    --ad--backgroundColor: #888;
+}
+
+.theme-dark {
+    --app-backgroundColor: #121212;
+    --title--color: #f6f6f6;
+    --title--backgroundColor: #424242;
+    --main--color: #f6f6f6;
+    --main--backgroundColor: #424242;
+    --nav--color: #f6f6f6;
+    --nav--backgroundColor: #424242;
+    --sidebar--color: #f6f6f6;
+    --sidebar--backgroundColor: #424242;
+    --footer--color: #f6f6f6;
+    --footer--backgroundColor: #424242;
+    --ad--color: #f6f6f6;
+    --ad--backgroundColor: #424242;
+}
+
+.App-Title,
+.App-Main,
+.App-Nav,
+.App-Sidebar,
+.App-Footer,
+.App-Ad {
+    margin: 12px;
+}
+
+.App-Title {
+    grid-area: title;
+    color: var(--title--color);
+    background: var(--title--backgroundColor);
+}
+
+.App-Main {
+    grid-area: main;
+    color: var(--main--color);
+    background: var(--main--backgroundColor);
+}
+
+.App-Nav {
+    grid-area: nav;
+    color: var(--nav--color);
+    background: var(--nav--backgroundColor);
+}
+
+.App-Sidebar {
+    grid-area: side;
+    color: var(--sidebar--color);
+    background: var(--sidebar--backgroundColor);
+}
+
+.App-Footer {
+    grid-area: footer;
+    color: var(--footer--color);
+    background: var(--footer--backgroundColor);
+}
+
+.App-Ad {
+    grid-area: ad;
+    color: var(--ad--color);
+    background: var(--ad--backgroundColor);
+}
