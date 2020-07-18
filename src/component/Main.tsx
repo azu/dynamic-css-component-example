@@ -3,7 +3,7 @@ import * as CSS from "csstype";
 import "./Main.css";
 export type MainProps = {
     style: CSS.Properties & {
-        "--border": string;
+        "--border": CSS.BorderProperty<any>;
     };
     children: ReactNode;
 } & HTMLAttributes<HTMLElement>;
